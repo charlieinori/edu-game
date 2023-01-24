@@ -1159,8 +1159,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"Kind":"Flow","collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":0.0,"y":-231.6475},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{"name":{"$content":"run","$type":"System.String"}},"position":{"x":-146.0,"y":-412.0},"guid":"a084affc-4e6e-4142-9c25-07dfbdad09a3","$version":"A","$type":"Unity.VisualScripting.BoltNamedAnimationEvent","$id":"10"},{"argumentCount":0,"defaultValues":{"name":{"$content":"Walk","$type":"System.String"},"target":null},"position":{"x":134.0,"y":-329.0},"guid":"6b68b985-e2a0-49e4-b6da-2c65953bc3ea","$version":"A","$type":"Unity.VisualScripting.TriggerCustomEvent","$id":"12"},{"chainable":false,"member":{"name":"FindWithTag","parameterTypes":["System.String"],"targetType":"UnityEngine.GameObject","targetTypeName":"UnityEngine.GameObject","$version":"A"},"defaultValues":{"%tag":{"$content":"SoundManager","$type":"System.String"}},"position":{"x":-140.0,"y":-165.0},"guid":"96d9208a-c762-409a-8986-2d35c2d4d8b1","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"14"},{"sourceUnit":{"$ref":"10"},"sourceKey":"trigger","destinationUnit":{"$ref":"12"},"destinationKey":"enter","guid":"c2d5c0fd-77bc-4865-9cce-3e4b8e04913c","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"14"},"sourceKey":"result","destinationUnit":{"$ref":"12"},"destinationKey":"target","guid":"4e4ce8de-ce03-4a23-83f7-ccc3161a0436","$type":"Unity.VisualScripting.ValueConnection"}],"$version":"A"}}}'
-    _objectReferences: []
+    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: c450b28091161d14ea99ee3b7b715798, type: 2}
 --- !u!1 &1305472697
 GameObject:
   m_ObjectHideFlags: 0
@@ -1765,12 +1766,12 @@ PrefabInstance:
     - target: {fileID: 8980598129622508972, guid: 3031496842dafbf44af3790bc83640ca,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.51
+      value: -6.54
       objectReference: {fileID: 0}
     - target: {fileID: 8980598129622508972, guid: 3031496842dafbf44af3790bc83640ca,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.86
+      value: -0.83
       objectReference: {fileID: 0}
     - target: {fileID: 8980598129622508972, guid: 3031496842dafbf44af3790bc83640ca,
         type: 3}
@@ -1850,7 +1851,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1543288241}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.06, y: -0.09, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2342,6 +2343,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8691727116654366584, guid: 3fd953b7f36d4224fa9ca0bf853a9d33,
+        type: 3}
+      propertyPath: _data._json
+      value: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8691727116654366584, guid: 3fd953b7f36d4224fa9ca0bf853a9d33,
+        type: 3}
+      propertyPath: _data._objectReferences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8691727116654366584, guid: 3fd953b7f36d4224fa9ca0bf853a9d33,
+        type: 3}
+      propertyPath: _data._objectReferences.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 7bda99e6135bf914abd639e6735095fb,
+        type: 2}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 3fd953b7f36d4224fa9ca0bf853a9d33, type: 3}
